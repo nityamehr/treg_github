@@ -23,21 +23,21 @@ setwd("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs"
 
 ```{r}
 #Loading Data
-treg_object <- readRDS("Treg_igt1_96_withtotalvi20260206_clean.Rds")
-color_palette <- read.csv("immgent_color_palettes_level2_1.csv", header = FALSE)
+treg_object <- readRDS("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/Treg_igt1_96_withtotalvi20260206_clean.Rds")
+color_palette <- read.csv("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/immgent_color_palettes_level2_1.csv", header = FALSE)
 palette_vector <- setNames(as.character(color_palette$V2), as.character(color_palette$V1))
-organ_palette <- read.csv("immgent_color_palettes_organ_simplified.csv", header = FALSE)
+organ_palette <- read.csv("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/immgent_color_palettes_organ_simplified.csv", header = FALSE)
 palette_vector_organ <- setNames(organ_palette$V2, organ_palette$V1)
-onevsall_cluster <- read.table("ttlist_OneVsAll.txt", header = TRUE)
-adt_so <- readRDS("igt1_96_withtotalvi20250710_clean_ADTonly.Rds")
-L1 <- readRDS("L1.Rds")
-F1 <- readRDS("F1.Rds")
-line_pairs_All <- read.csv("testAll.csv")
-igt_flow <- read.csv("igt_flow3.csv", row.names = 1)
-main_trbi <- read.csv("radarplot012626.csv")
-tcr <- read.csv("all_igts_summary.csv.gz")
-ptregs <- readRDS("ptreg_so.Rds")
-trbi_supp <- read.csv("all_data_suppl.csv")
+onevsall_cluster <- read.table("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/ttlist_OneVsAll.txt", header = TRUE)
+adt_so <- readRDS("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/igt1_96_withtotalvi20250710_clean_ADTonly.Rds")
+L1 <- readRDS("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/L1.Rds")
+F1 <- readRDS("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/F1.Rds")
+line_pairs_All <- read.csv("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/testAll.csv")
+igt_flow <- read.csv("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/igt_flow3.csv", row.names = 1)
+main_trbi <- read.csv("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/radarplot012626.csv")
+tcr <- read.csv("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/all_igts_summary.csv.gz")
+ptregs <- readRDS("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/ptreg_so.Rds")
+trbi_supp <- read.csv("/Users/nityamehrotra/Library/CloudStorage/Box-Box/ZemmourLab_Nitya/Tregs/all_data_suppl.csv")
 
 ```
 
