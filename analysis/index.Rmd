@@ -8,7 +8,7 @@ output:
 
 # immgenT Treg
 
-This site contains the analysis workflow for the immgenT regulatory T cell atlas.
+This site contains the analysis workflow for immgenT Treg
 
 ## Main Figures
 
