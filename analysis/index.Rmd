@@ -1,11 +1,15 @@
 ---
-title: "Home"
+title: "ImmGenT Treg Atlas"
 site: workflowr::wflow_site
 output:
   workflowr::wflow_html:
     toc: false
-editor_options:
-  chunk_output_type: console
 ---
 
-Welcome to my research website.
+# ImmGenT Treg Atlas
+
+This site contains the analysis workflow for the ImmGenT regulatory T cell atlas.
+
+## Analysis
+
+[Treg analysis workflow](Treg_Workflow.html)
