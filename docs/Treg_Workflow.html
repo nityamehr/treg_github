@@ -508,15 +508,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomnityamehrtreggithubtree544e94498ca703876c96fffa037342cc76559c54targetblank544e944a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomnityamehrtreggithubtree11edf8b49544235f176f3e5cdaa2ee25ae59a231targetblank11edf8ba">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/nityamehr/treg_github/tree/544e94498ca703876c96fffa037342cc76559c54" target="_blank">544e944</a>
+<a href="https://github.com/nityamehr/treg_github/tree/11edf8b49544235f176f3e5cdaa2ee25ae59a231" target="_blank">11edf8b</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomnityamehrtreggithubtree544e94498ca703876c96fffa037342cc76559c54targetblank544e944a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomnityamehrtreggithubtree11edf8b49544235f176f3e5cdaa2ee25ae59a231targetblank11edf8ba"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -526,7 +526,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/nityamehr/treg_github/tree/544e94498ca703876c96fffa037342cc76559c54" target="_blank">544e944</a>.
+<a href="https://github.com/nityamehr/treg_github/tree/11edf8b49544235f176f3e5cdaa2ee25ae59a231" target="_blank">11edf8b</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -592,6 +592,41 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/nityamehr/treg_github/blob/11edf8b49544235f176f3e5cdaa2ee25ae59a231/analysis/Treg_Workflow.Rmd" target="_blank">11edf8b</a>
+</td>
+<td>
+Nitya Mehrotra
+</td>
+<td>
+2026-09-01
+</td>
+<td>
+workflowr::wflow_publish(c("analysis/Treg_Workflow.Rmd",
+"analysis/index.Rmd"))
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/nityamehr/treg_github/17e2c17cac37ec78bd1bbbad75ce2f5421bbc912/docs/Treg_Workflow.html" target="_blank">17e2c17</a>
+</td>
+<td>
+Nitya Mehrotra
+</td>
+<td>
+2026-09-01
+</td>
+<td>
+Update Treg workflow site
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -758,9 +793,26 @@ treg_object_filtered &lt;- subset(treg_object, subset = sample_code %in% sample_
 
 
 treg_rna &lt;- subset(treg_object, subset = !annotation_level2 %in% c(&quot;Treg.wM&quot;))</code></pre>
+<div id="figure-1" class="section level1">
+<h1>Figure 1</h1>
+<div id="immgent-resolves-treg-heterogeneity-into-eight-stable-clusters"
+class="section level2">
+<h2>immgenT resolves Treg heterogeneity into eight stable clusters</h2>
+</div>
+<div id="figure-1a" class="section level2">
+<h2>Figure 1a</h2>
 <pre class="r"><code>#for david</code></pre>
+</div>
+<div id="figure-1b" class="section level2">
+<h2>Figure 1b</h2>
 <pre class="r"><code>#for david</code></pre>
+</div>
+<div id="figure-1c" class="section level2">
+<h2>Figure 1c</h2>
 <pre class="r"><code>#for david</code></pre>
+</div>
+<div id="figure-1d" class="section level2">
+<h2>Figure 1d</h2>
 <pre class="r"><code>DimPlot(treg_object, reduction = &quot;mde_incremental&quot;, group.by = &quot;annotation_level2&quot;, cols = palette_vector, label = FALSE, raster = TRUE, raster.dpi = c(1024, 1024)) + ggtitle(&quot;Treg Cells in All Populations&quot;) + NoAxes() + NoLegend() + theme(legend.position = &quot;none&quot;) + coord_cartesian(xlim = c(-2.5, 4), ylim = c(-2.5, 2.5))</code></pre>
 <p><img src="figure/Treg_Workflow.Rmd/1d%20-%20overall%20Treg%20mde-1.png" alt="" width="768" style="display: block; margin: auto;" /></p>
 <p>
@@ -800,6 +852,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-1e" class="section level2">
+<h2>Figure 1e</h2>
 <pre class="r"><code>p = FeaturePlot(treg_object, slot = &quot;data&quot;, features = &quot;Foxp3&quot;, reduction = &quot;mde_incremental&quot;, pt.size = 1.5, order = TRUE, raster = T, raster.dpi = c(512, 512))
 p + NoLegend()</code></pre>
 <p><img src="figure/Treg_Workflow.Rmd/1e%20-%20feature%20plots%20of%20selected%20genes%20-1.png" alt="" width="768" style="display: block; margin: auto;" /></p>
@@ -1210,6 +1265,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-1f" class="section level2">
+<h2>Figure 1f</h2>
 <pre class="r"><code>logfc_cols &lt;- grep(&quot;^log2FC_&quot;, names(onevsall_cluster), value = TRUE)
 
 col_order &lt;- c(
@@ -1308,6 +1366,12 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-1g" class="section level2">
+<h2>Figure 1g</h2>
+</div>
+<div id="figure-1h" class="section level2">
+<h2>Figure 1h</h2>
 <pre class="r"><code>mypal_level2_all &lt;- ZemmourLib::immgent_colors$level2
 
 names(mypal_level2_all)[names(mypal_level2_all) == &quot;Treg_cl1&quot;] &lt;- &quot;Treg.A&quot;
@@ -1647,6 +1711,17 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="figure-2" class="section level1">
+<h1>Figure 2</h1>
+<div id="an-eight-color-flow-cytometry-panel-resolves-treg-clusters"
+class="section level2">
+<h2>An eight-color flow cytometry panel resolves Treg clusters</h2>
+</div>
+</div>
+<div id="figure-2a" class="section level1">
+<h1>Figure 2a</h1>
 <pre class="r"><code>vol_sub &lt;- subset(adt_so, subset = annotation_level1 %in% c(&quot;CD4&quot;, &quot;Treg&quot;))
 vol_sub &lt;- subset(vol_sub, subset = !(annotation_level2 %in% c(&quot;Treg_cl1&quot;, &quot;Treg_cl7&quot;)))
 metadata &lt;- vol_sub@meta.data
@@ -1759,6 +1834,8 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+<div id="figure-2b" class="section level2">
+<h2>Figure 2b</h2>
 <pre class="r"><code>adt_markers &lt;- c(&quot;CD62L&quot;, &quot;FR4&quot;, &quot;NEUROPILIN1.CD304&quot;, &quot;CD69&quot;, &quot;KLRG1&quot;, &quot;SCA1&quot;, &quot;CD44&quot;, &quot;CD29&quot;, &quot;CD49B&quot;)
 
 cluster_order &lt;- c(&quot;Treg.A&quot;, &quot;Treg.B&quot;, &quot;Treg.C&quot;,&quot;Treg.D&quot;, &quot;Treg.E&quot;,&quot;Treg.F&quot;)
@@ -1847,6 +1924,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-2d" class="section level2">
+<h2>Figure 2d</h2>
 <pre class="r"><code>MyDimPlotHighlightDensity &lt;- function(
   seurat_object = so,
   umap_to_plot = &quot;mde_incremental&quot;,
@@ -2187,6 +2267,7 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+<p>##Figure 2f</p>
 <pre class="r"><code>library(Seurat)
 library(dplyr)
 library(tidyr)
@@ -3074,6 +3155,18 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="figure-3" class="section level1">
+<h1>Figure 3</h1>
+<div
+id="treg.a-resting-tregs-while-enriched-in-lymphoid-tissues-are-broadly-distributed-and-present-in-non-lymphoid-organs"
+class="section level2">
+<h2>Treg.A (resting Tregs), while enriched in lymphoid tissues, are
+broadly distributed and present in non-lymphoid organs</h2>
+</div>
+<div id="figure-3b" class="section level2">
+<h2>Figure 3b</h2>
 <pre class="r"><code>selected_organs &lt;- c(&quot;small intestine&quot;, &quot;colon&quot;, &quot;skin&quot;, &quot;liver&quot;, &quot;placenta&quot;, &quot;lung&quot;)
 
 ivneg_gating &lt;- c(&quot;IV- CD3+&quot;, &quot;IV- CD45.2+ CD3e+&quot;, &quot;IV- CD45+ CD3e+&quot;,&quot;IV- CD45+ CD3e+ Thy1.1- and Thy1.1+ (OT1)&quot;)
@@ -3201,6 +3294,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-3f" class="section level2">
+<h2>Figure 3f</h2>
 <pre class="r"><code>top_n &lt;- 50
 
 organ_col &lt;- &quot;organ_simplified&quot;
@@ -3402,6 +3498,18 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="figure-4" class="section level1">
+<h1>Figure 4</h1>
+<div
+id="treg-cells-in-healthy-tissues-shared-clusters-with-organ-specific-enrichments"
+class="section level2">
+<h2>Treg cells in healthy tissues: shared clusters with organ-specific
+enrichments</h2>
+</div>
+<div id="figure-4d" class="section level2">
+<h2>Figure 4d</h2>
 <pre class="r"><code>emb_all &lt;- Embeddings(healthy_subset_inc, &quot;mde_incremental&quot;) %&gt;% as.data.frame()
 emb_all$cluster &lt;- healthy_subset_inc$annotation_level2
 emb_all$organ   &lt;- healthy_subset_inc$organ_simplified
@@ -3725,6 +3833,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-4h" class="section level2">
+<h2>Figure 4h</h2>
 <pre class="r"><code>mdata_orig &lt;- treg_object@meta.data
 genetics_keep &lt;- c(&quot;wt&quot;, &quot;B6-Foxp3-GFP (B6.Cg-Foxp3tm1Kuch/J)&quot;)
 
@@ -3834,44 +3945,7 @@ pheatmap(
   fontsize = 7,
   color = ColorRamp
 )</code></pre>
-<p><img src="figure/Treg_Workflow.Rmd/heatmaps%20comparing%20Treg.D/E%20to%20Treg.A%20in%20spleen-1.png" alt="" width="480" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-E-to-Treg.A-in-spleen-1">
-Past versions of "E to Treg.A in spleen-1.png"
-</button>
-</p>
-<div id="fig-no-spaces-E-to-Treg.A-in-spleen-1" class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/nityamehr/treg_github/blob/544e94498ca703876c96fffa037342cc76559c54/docs/figure/Treg_Workflow.Rmd/heatmaps comparing Treg.D/E to Treg.A in spleen-1.png" target="_blank">544e944</a>
-</td>
-<td>
-Nitya Mehrotra
-</td>
-<td>
-2026-08-31
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p><img src="figure/Treg_Workflow.Rmd/4h%20heatmaps%20comparing%20Treg.D/E%20to%20Treg.A%20in%20spleen-1.png" alt="" width="480" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>organs_selected &lt;- mdata_orig %&gt;%
   filter(annotation_level2 == &quot;Treg.D&quot;,
          condition_detailed_simplified == &quot;baseline&quot;,
@@ -3967,44 +4041,17 @@ pheatmap(
   fontsize = 7,
   color = ColorRamp
 )</code></pre>
-<p><img src="figure/Treg_Workflow.Rmd/heatmaps%20comparing%20Treg.D/E%20to%20Treg.A%20in%20spleen-2.png" alt="" width="480" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-E-to-Treg.A-in-spleen-2">
-Past versions of "E to Treg.A in spleen-2.png"
-</button>
-</p>
-<div id="fig-no-spaces-E-to-Treg.A-in-spleen-2" class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/nityamehr/treg_github/blob/544e94498ca703876c96fffa037342cc76559c54/docs/figure/Treg_Workflow.Rmd/heatmaps comparing Treg.D/E to Treg.A in spleen-2.png" target="_blank">544e944</a>
-</td>
-<td>
-Nitya Mehrotra
-</td>
-<td>
-2026-08-31
-</td>
-</tr>
-</tbody>
-</table>
+<p><img src="figure/Treg_Workflow.Rmd/4h%20heatmaps%20comparing%20Treg.D/E%20to%20Treg.A%20in%20spleen-2.png" alt="" width="480" style="display: block; margin: auto;" />
+# Figure 5</p>
 </div>
+<div
+id="treg-cells-during-inflammation-in-tissues-undergo-cluster-redistribution-rather-than-the-emergence-of-new-states"
+class="section level2">
+<h2>Treg cells during inflammation in tissues undergo cluster
+redistribution rather than the emergence of new states</h2>
 </div>
+<div id="figure-5a" class="section level2">
+<h2>Figure 5a</h2>
 <pre class="r"><code>treg_object_filtered@meta.data &lt;- treg_object_filtered@meta.data %&gt;%
   mutate(condition_detailed_simplified = case_when(
     condition_detailed_simplified %in% c(&quot;CtrachomatisD&quot;, &quot;CtrachomatisL2&quot;) ~ &quot;Ctrachomatis&quot;,
@@ -4558,6 +4605,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-5b" class="section level2">
+<h2>Figure 5b</h2>
 <pre class="r"><code>FeaturePlot(
   treg_object,
   features = &quot;Rorc&quot;,
@@ -4614,6 +4664,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-5c" class="section level2">
+<h2>Figure 5c</h2>
 <pre class="r"><code>FeaturePlot(
   treg_object,
   features = &quot;Klrg1&quot;,
@@ -4665,6 +4718,7 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+<p>##Figure 5d</p>
 <pre class="r"><code>mdata_orig &lt;- treg_object@meta.data
 conditions_selected &lt;- mdata_orig %&gt;%
   filter(
@@ -5032,6 +5086,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-5g" class="section level2">
+<h2>Figure 5g</h2>
 <pre class="r"><code>annotation_counts_cond &lt;- treg_object_filtered@meta.data %&gt;%
   group_by(sample_code, condition_broad, annotation_level2, condition_detailed_simplified) %&gt;%
   summarise(count = n(), .groups = &quot;drop&quot;)
@@ -5196,6 +5253,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-5h" class="section level2">
+<h2>Figure 5h</h2>
 <pre class="r"><code>cond_col &lt;- names(main_trbi)[1]
 
 colnames(main_trbi)[colnames(main_trbi) == &quot;Cl.1&quot;] &lt;- &quot;Treg.A&quot;
@@ -5290,6 +5350,19 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="figure-6" class="section level1">
+<h1>Figure 6</h1>
+<div
+id="treg.f-the-main-circulating-effector-treg-population-enriched-in-specific-non-lymphoid-tissues-and-characterized-by-cd49b-and-klf2-expression"
+class="section level2">
+<h2>Treg.F: the main circulating effector Treg population, enriched in
+specific non-lymphoid tissues and characterized by CD49b and KLF2
+expression</h2>
+</div>
+<div id="figure-6a" class="section level2">
+<h2>Figure 6a</h2>
 <pre class="r"><code>top_organs &lt;- c(&quot;placenta&quot;, &quot;uterus&quot;, &quot;liver&quot;, &quot;peritoneal cavity&quot;, &quot;blood&quot;)
 
 for (org in top_organs) {
@@ -5529,6 +5602,12 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-6c" class="section level2">
+<h2>Figure 6c</h2>
+</div>
+<div id="figure-6d" class="section level2">
+<h2>Figure 6d</h2>
 <pre class="r"><code>assay_use &lt;- &quot;RNA&quot;
 
 Idents(treg_object) &lt;- &quot;annotation_level2&quot;
@@ -5698,6 +5777,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-6f" class="section level2">
+<h2>Figure 6f</h2>
 <pre class="r"><code>FeaturePlot(treg_object_filtered, features = &quot;Klf2&quot;,reduction = &quot;mde_incremental&quot;, raster = TRUE, raster.dpi = c(512,512)) + NoAxes()</code></pre>
 <p><img src="figure/Treg_Workflow.Rmd/6f%20-%20feature%20plot%20of%20klf2%20expression-1.png" alt="" width="768" style="display: block; margin: auto;" /></p>
 <p>
@@ -5738,6 +5820,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-6h" class="section level2">
+<h2>Figure 6h</h2>
 <pre class="r"><code>FeaturePlot(treg_object_filtered, features = &quot;S1pr1&quot;,reduction = &quot;mde_incremental&quot;, raster = TRUE, raster.dpi = c(512,512)) + NoAxes()</code></pre>
 <p><img src="figure/Treg_Workflow.Rmd/6h%20-%20feature%20plot%20of%20s1pr1-1.png" alt="" width="768" style="display: block; margin: auto;" /></p>
 <p>
@@ -5777,6 +5862,15 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="extended-data-figure-1" class="section level1">
+<h1>Extended Data Figure 1</h1>
+<div id="treg-cluster-characteristics" class="section level2">
+<h2>Treg cluster characteristics</h2>
+</div>
+<div id="figure-s1c" class="section level2">
+<h2>Figure S1c</h2>
 <pre class="r"><code>s1c &lt;- treg_object@meta.data %&gt;%
   filter(
     !is.na(condition_detailed_simplified),
@@ -5972,6 +6066,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-s1e" class="section level2">
+<h2>Figure S1e</h2>
 <pre class="r"><code>FeaturePlot(treg_object_filtered, features = &quot;Mki67&quot;,reduction = &quot;mde_incremental&quot;) + NoAxes()</code></pre>
 <p><img src="figure/Treg_Workflow.Rmd/S1e%20-%20feature%20plot%20of%20mki67-1.png" alt="" width="768" style="display: block; margin: auto;" /></p>
 <p>
@@ -6011,6 +6108,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-s1h" class="section level2">
+<h2>Figure S1h</h2>
 <pre class="r"><code>gene_markers &lt;- c(
   &quot;Il2ra&quot;, &quot;Lrrc32&quot;, &quot;Areg&quot;, &quot;Ctla4&quot;, &quot;Il10&quot;, &quot;Gzma&quot;, &quot;Gzmb&quot;,
   &quot;Tgfb1&quot;, &quot;Ebi3&quot;, &quot;Entpd1&quot;, &quot;Nt5e&quot;
@@ -6190,6 +6290,18 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="extended-data-figure-2" class="section level1">
+<h1>Extended Data Figure 2</h1>
+<div
+id="ptregs-do-not-form-a-distinct-cluster-and-are-broadly-distributed-across-clusters"
+class="section level2">
+<h2>pTregs do not form a distinct cluster and are broadly distributed
+across clusters</h2>
+</div>
+<div id="figure-s2a" class="section level2">
+<h2>Figure S2a</h2>
 <pre class="r"><code>tcr &lt;- tcr %&gt;%
   unite(
     &quot;clonotype&quot;,
@@ -6308,6 +6420,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-s2c" class="section level2">
+<h2>Figure S2c</h2>
 <pre class="r"><code>ref_embedding &lt;- as.data.frame(
   Embeddings(
     treg_object,
@@ -6393,6 +6508,18 @@ print(p)
 dev.off()</code></pre>
 <pre><code>quartz_off_screen 
                 2 </code></pre>
+</div>
+<div id="extended-data-figure-5" class="section level2">
+<h2># Extended Data Figure 5</h2>
+</div>
+<div
+id="comparing-cite-seq-and-flow-cytometry-performance-for-quantifying-treg-clusters"
+class="section level2">
+<h2>Comparing CITE-seq and flow cytometry performance for quantifying
+Treg clusters</h2>
+</div>
+<div id="figure-s5b" class="section level2">
+<h2>Figure S5b</h2>
 <pre class="r"><code>#rownames(igt_flow) &lt;- c(&quot;thymus&quot;, &quot;bone marrow&quot;, &quot;blood&quot;, &quot;spleen&quot;, &quot;LN&quot;, &quot;lung&quot;, &quot;colon&quot;, &quot;small intestine&quot;, &quot;peritoneal cavity&quot;, &quot;liver&quot;)
 
 
@@ -6521,6 +6648,16 @@ dev.off()</code></pre>
  # ) +
   #theme_minimal() +
  # theme(axis.line = element_line())</code></pre>
+</div>
+</div>
+<div id="extended-data-figure-7" class="section level1">
+<h1>Extended Data Figure 7</h1>
+<div id="treg-distribution-across-anatomical-lymph-nodes-at-baseline"
+class="section level2">
+<h2>Treg distribution across anatomical lymph nodes at baseline</h2>
+</div>
+<div id="figures-s7a-e" class="section level2">
+<h2>Figures S7a-e</h2>
 <pre class="r"><code>set.seed(123)
 
 ln_keep &lt;- c(
@@ -6810,6 +6947,16 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="extended-data-figure-8" class="section level1">
+<h1>Extended Data Figure 8</h1>
+<div id="treg-distribution-during-inflammation-in-tissues"
+class="section level2">
+<h2>Treg distribution during inflammation in tissues</h2>
+</div>
+<div id="figure-s8b" class="section level2">
+<h2>Figure S8b</h2>
 <pre class="r"><code>lung_tregs &lt;- subset(treg_object_clean, subset = organ_simplified == &quot;lung&quot;)
 allergy_lung &lt;- subset(lung_tregs, subset = condition_detailed_simplified == &quot;HDM&quot;)
 
@@ -7227,6 +7374,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-s8c" class="section level2">
+<h2>Figure S8c</h2>
 <pre class="r"><code>FeaturePlot(
   treg_object,
   features = &quot;Rorc&quot;,
@@ -7331,6 +7481,15 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="extended-data-figure-9" class="section level1">
+<h1>Extended Data Figure 9</h1>
+<div id="treg-distribution-in-cancer-samples" class="section level2">
+<h2>Treg distribution in cancer samples</h2>
+</div>
+<div id="figure-s9a" class="section level2">
+<h2>Figure S9a</h2>
 <pre class="r"><code>cancer_sub_adt &lt;- subset(
   adt_so,
   subset = condition_broad == &quot;cancer&quot;
@@ -7533,6 +7692,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-s9f" class="section level2">
+<h2>Figure S9f</h2>
 <pre class="r"><code>cond_col &lt;- names(trbi_supp)[1]
 
 radar_wide &lt;- trbi_supp %&gt;%
@@ -7638,6 +7800,9 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+<div id="figure-s9g" class="section level2">
+<h2>Figure S9g</h2>
 <pre class="r"><code>FeaturePlot(treg_object, reduction = &quot;mde_incremental&quot;, features = c(&quot;Ccr8&quot;), order = T,  min.cutoff = &quot;q1&quot;, max.cutoff = &quot;q99&quot;,  cols = c(&quot;lightgrey&quot;, &quot;blue&quot;) , raster = F, raster.dpi = c(512,512)) + coord_cartesian(xlim = c(-2.5, 4), ylim = c(-2.5, 2.5)) + NoAxes() + NoLegend() + theme_void() + theme(legend.position = &quot;none&quot;)</code></pre>
 <pre><code>Warning: Could not find Ccr8 in the default search locations, found in &#39;RNA&#39;
 assay instead</code></pre>
@@ -7679,6 +7844,15 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="extended-data-figure-10" class="section level1">
+<h1>Extended Data Figure 10</h1>
+<div id="treg.f-characteristics" class="section level2">
+<h2>Treg.F characteristics</h2>
+</div>
+<div id="figure-s10b" class="section level2">
+<h2>Figure S10b</h2>
 <pre class="r"><code>library(msigdbr)
 library(fgsea)
 library(Seurat)
@@ -7920,6 +8094,15 @@ Nitya Mehrotra
 </table>
 </div>
 </div>
+</div>
+</div>
+<div id="extended-data-figure-11" class="section level1">
+<h1>Extended Data Figure 11</h1>
+<div id="treg-cells-in-abo-and-aboo-mice" class="section level2">
+<h2>Treg cells in AB+/o and ABo/o mice</h2>
+</div>
+<div id="figure-s11a" class="section level2">
+<h2>Figure S11a</h2>
 <pre class="r"><code>emb_all &lt;- Embeddings(treg_object, &quot;mde_incremental&quot;) %&gt;% as.data.frame()
 emb_all$cluster &lt;- treg_object$annotation_level2
 emb_all$organ   &lt;- treg_object$organ_simplified
@@ -7946,45 +8129,7 @@ ggplot(emb_all, aes(x = mdeincremental_1, y = mdeincremental_2)) +
   theme_minimal() +
   ggtitle(&quot;MHCII Het Cells Highlighted by Cluster Color&quot;) +
   NoAxes() + NoGrid() + NoLegend()</code></pre>
-<p><img src="figure/Treg_Workflow.Rmd/S10a%20mhciiko/het%20mdes%20highlighting%20cluster%20distribution-1.png" alt="" width="768" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-het-mdes-highlighting-cluster-distribution-1">
-Past versions of "het mdes highlighting cluster distribution-1.png"
-</button>
-</p>
-<div id="fig-no-spaces-het-mdes-highlighting-cluster-distribution-1"
-class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/nityamehr/treg_github/blob/544e94498ca703876c96fffa037342cc76559c54/docs/figure/Treg_Workflow.Rmd/S10a mhciiko/het mdes highlighting cluster distribution-1.png" target="_blank">544e944</a>
-</td>
-<td>
-Nitya Mehrotra
-</td>
-<td>
-2026-08-31
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p><img src="figure/Treg_Workflow.Rmd/S11a%20mhciiko/het%20mdes%20highlighting%20cluster%20distribution-1.png" alt="" width="768" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>ggplot(emb_all, aes(x = mdeincremental_1, y = mdeincremental_2)) +
   rasterise(geom_point(color = &quot;lightgray&quot;, size = 0.25, alpha = 0.25), dpi = 300) +
   rasterise(
@@ -7995,45 +8140,7 @@ Nitya Mehrotra
   theme_minimal() +
   ggtitle(&quot;MHCII KO Cells Highlighted by Cluster Color&quot;) +
   NoAxes() + NoGrid() + NoLegend()</code></pre>
-<p><img src="figure/Treg_Workflow.Rmd/S10a%20mhciiko/het%20mdes%20highlighting%20cluster%20distribution-2.png" alt="" width="768" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-het-mdes-highlighting-cluster-distribution-2">
-Past versions of "het mdes highlighting cluster distribution-2.png"
-</button>
-</p>
-<div id="fig-no-spaces-het-mdes-highlighting-cluster-distribution-2"
-class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/nityamehr/treg_github/blob/544e94498ca703876c96fffa037342cc76559c54/docs/figure/Treg_Workflow.Rmd/S10a mhciiko/het mdes highlighting cluster distribution-2.png" target="_blank">544e944</a>
-</td>
-<td>
-Nitya Mehrotra
-</td>
-<td>
-2026-08-31
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p><img src="figure/Treg_Workflow.Rmd/S11a%20mhciiko/het%20mdes%20highlighting%20cluster%20distribution-2.png" alt="" width="768" style="display: block; margin: auto;" /></p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -8114,6 +8221,8 @@ loaded via a namespace (and not attached):
 [124] png_0.1-9              spatstat.univar_3.1-5  parallel_4.5.2        
 [127] assertthat_0.2.1       dotCall64_1.2          listenv_0.10.1        
 [130] ggridges_0.5.7         rlang_1.1.7            fastmatch_1.1-6       </code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
