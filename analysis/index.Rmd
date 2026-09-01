@@ -1,14 +1,14 @@
 ---
-title: "ImmGenT Treg Atlas"
+title: "immgenT Treg"
 site: workflowr::wflow_site
 output:
   workflowr::wflow_html:
     toc: false
 ---
 
-# ImmGenT Treg Atlas
+# immgenT Treg
 
-This site contains the analysis workflow for the ImmGenT regulatory T cell atlas.
+This site contains the analysis workflow for the immgenT regulatory T cell atlas.
 
 ## Analysis
 
