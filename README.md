@@ -6,7 +6,7 @@ A [workflowr][] project.
 
 # immgenT-Treg analysis companion
 
-This repository is the complete, ready-to-run companion code for the **immgenT-Treg** CITE-seq analysis (regulatory T cell atlas). It contains the R/workflowr analysis used to reproduce the main and supplementary figure panels, together with supporting scripts and links to the required input data.
+This repository is the complete, ready-to-run companion code for the **immgenT-Treg** single-cell and CITE-seq analysis (regulatory T cell atlas). It contains the R/workflowr analysis used to reproduce the main and supplementary figure panels, together with supporting scripts and links to the required input data.
 
 ## Data availability
 
